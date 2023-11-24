@@ -1,0 +1,10 @@
+{{ template "header" . }}
+<h1>アカウント削除</h1>
+<ul>
+    <p>以下のアカウントを本当に削除しますか？</p><br>
+    <p>ユーザー名:{{.Username}}</p><br>
+    
+    <a href="/"><button type="button">トップへ戻る</button></a>
+    <a href="/user/delete"><button type="button">削除する</button></a>
+</ul>
+{{ template "footer" }}

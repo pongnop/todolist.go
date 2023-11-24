@@ -1,0 +1,11 @@
+{{ template "header" . }}
+<h1>TODO List</h1>
+<ul>
+    {{if not .Login}}<li><a href="/user/new">新規ユーザー登録</a></li>
+    <li><a href="/login">ログイン</a></li>{{else}}
+    <li><a href="/list">登録済みタスク一覧</a></li>
+    <li><a href="/user/edit">アカウント情報の変更</a></li>
+    <li><a href="/logout">ログアウト</a></li>
+    <li><a href="/user/deleteform">アカウントの削除</a></li>{{end}}
+</ul>
+{{ template "footer" }}
